@@ -1,7 +1,7 @@
 
 ---
 title: "개발 기록"
-date: 2026-10-31 00:00:00 +0900
+date: 2026-10-30 15:00:00 +0900
 categories: [개발]
 tags: [development]
 ---
