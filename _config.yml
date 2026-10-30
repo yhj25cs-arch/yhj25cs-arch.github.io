@@ -29,7 +29,8 @@ social:
   name: yuhyunji
   email: yhj25cs@ewha.ac.kr
   fediverse_handle:
-  links: - https://github.com/yhj25cs-arch
+  links:
+    - https://github.com/yhj25cs-arch
     # The first element serves as the copyright owner's link
     - https://twitter.com/username # change to your Twitter homepage
     - https://github.com/username # change to your GitHub homepage
