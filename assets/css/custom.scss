@@ -1,0 +1,45 @@
+
+/* CIPHER - Cyber Blue Dark Theme */
+
+/* 사이드바 배경 */
+#sidebar {
+  background: #101827;
+}
+
+/* 블로그 제목 */
+#sidebar .site-title a {
+  color: #60a5fa;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+/* 블로그 소개 문구 */
+#sidebar .site-subtitle {
+  color: #94a3b8;
+}
+
+/* 사이드바 메뉴 */
+#sidebar .nav-link {
+  border-radius: 10px;
+}
+
+/* 메뉴에 마우스를 올렸을 때 */
+#sidebar .nav-link:hover {
+  background: #1e3a5f;
+}
+
+/* 현재 선택한 메뉴 */
+#sidebar .nav-item.active .nav-link {
+  background: #1e3a5f;
+  color: #93c5fd;
+}
+
+/* 링크 강조 */
+a:hover {
+  color: #60a5fa;
+}
+
+/* 글 제목 */
+h1, h2, h3 {
+  letter-spacing: 0.3px;
+}
