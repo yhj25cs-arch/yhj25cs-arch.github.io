@@ -151,3 +151,29 @@ body {
     font-size: 17px !important;
   }
 }
+
+/* CIPHER - Arcade Maze Decoration */
+
+/* 메인 콘텐츠 영역 */
+#main-wrapper {
+  background-image: url('/assets/img/arcade-maze.svg');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100% auto;
+  background-attachment: scroll;
+}
+
+/* 사이드바 미로 장식 */
+#sidebar {
+  background-image: url('/assets/img/arcade-maze.svg');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: auto 100%;
+}
+
+/* 모바일에서는 장식 간소화 */
+@media (max-width: 768px) {
+  #main-wrapper {
+    background-image: none;
+  }
+}
