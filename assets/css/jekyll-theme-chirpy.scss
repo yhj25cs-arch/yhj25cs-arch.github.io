@@ -5,39 +5,113 @@
   $theme: '{{ site.theme_mode }}'
 );
 
+/* prettier-ignore */
 @use 'main
 {%- if jekyll.environment == 'production' -%}
   .bundle
 {%- endif -%}
 ';
 
-/* CIPHER - Cyber Blue Dark Theme */
+/* ==================================
+   CIPHER - RETRO ARCADE THEME
+   ================================== */
 
+/* 전체 배경 및 색상 */
+html[data-bs-theme="dark"] {
+  --main-bg: #080d1d;
+  --sidebar-bg: #060b19;
+  --text-color: #e8edf7;
+  --heading-color: #f5f7ff;
+  --link-color: #65a4ff;
+}
+
+body {
+  background: #080d1d;
+}
+
+/* 사이드바 */
 #sidebar {
-  background: #101827;
+  background: #060b19;
+  border-right: 3px solid #3478f6;
 }
 
+/* CIPHER 제목 */
 #sidebar .site-title a {
-  color: #60a5fa;
-  font-weight: 800;
-  letter-spacing: 2px;
+  color: #ffd83d !important;
+  font-family: Consolas, monospace;
+  font-weight: 900;
+  letter-spacing: 3px;
+  text-shadow: 3px 3px 0 #193c89;
 }
 
+/* 부제목 */
 #sidebar .site-subtitle {
-  color: #94a3b8;
+  color: #a7b8d7;
 }
 
+/* 메뉴 */
 #sidebar .nav-link {
-  border-radius: 10px;
+  border-radius: 4px;
+  transition: 0.2s ease;
 }
 
-#sidebar .nav-link:hover,
+#sidebar .nav-link:hover {
+  background: #142b57;
+  color: #ffd83d;
+}
+
 #sidebar .nav-item.active .nav-link {
-  background: #1e3a5f;
-  color: #93c5fd;
+  background: #101d3b;
+  outline: 2px solid #ffd83d;
+  outline-offset: -2px;
+  border-radius: 4px;
 }
 
+#sidebar .nav-item.active .nav-link,
 #sidebar .nav-item.active .nav-link span,
 #sidebar .nav-item.active .nav-link i {
-  color: #93c5fd;
+  color: #ffd83d !important;
+}
+
+/* 게시글 카드 */
+#post-list .card {
+  background: #0c1630;
+  border: 2px solid #3478f6;
+  border-radius: 5px;
+  box-shadow: 4px 4px 0 #142a59;
+  transition: transform 0.2s ease,
+              border-color 0.2s ease;
+}
+
+#post-list .card:hover {
+  transform: translateY(-3px);
+  border-color: #ffd83d;
+}
+
+/* 게시글 제목 */
+#post-list .card-title {
+  color: #f3f6ff;
+  font-weight: 700;
+}
+
+/* 페이지 제목 */
+h1, h2, h3 {
+  color: #f3f6ff;
+}
+
+/* 링크 */
+a:hover {
+  color: #ffd83d;
+}
+
+/* 본문 가독성 유지 */
+.post-content {
+  line-height: 1.85;
+}
+
+/* 작은 화면 대응 */
+@media (max-width: 768px) {
+  #post-list .card {
+    box-shadow: 2px 2px 0 #142a59;
+  }
 }
