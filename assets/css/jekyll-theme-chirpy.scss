@@ -177,11 +177,6 @@ body {
     repeat;
 }
 
-/* 본문 영역은 글이 잘 읽히도록 유지 */
-#main-wrapper > .container {
-  background-color: #080d1d;
-}
-
 /* 모바일에서는 장식 간소화 */
 @media (max-width: 768px) {
   #main-wrapper {
