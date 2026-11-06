@@ -151,3 +151,40 @@ body {
     font-size: 17px !important;
   }
 }
+
+/* ==========================================
+   CIPHER - ARCADE MAZE BACKGROUND
+   ========================================== */
+
+/* 메인 영역 배경 */
+#main-wrapper {
+  background-color: #080d1d;
+  background-image:
+    radial-gradient(circle, #ffd83d 2.5px, transparent 3px),
+    linear-gradient(90deg, #3478f6 3px, transparent 3px),
+    linear-gradient(#3478f6 3px, transparent 3px);
+  background-size:
+    40px 40px,
+    240px 240px,
+    240px 240px;
+  background-position:
+    12px 12px,
+    -190px -190px,
+    -190px -190px;
+  background-repeat:
+    repeat-x,
+    repeat,
+    repeat;
+}
+
+/* 본문 영역은 글이 잘 읽히도록 유지 */
+#main-wrapper > .container {
+  background-color: #080d1d;
+}
+
+/* 모바일에서는 장식 간소화 */
+@media (max-width: 768px) {
+  #main-wrapper {
+    background-image: none;
+  }
+}
