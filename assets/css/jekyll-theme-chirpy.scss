@@ -129,3 +129,112 @@ a:hover {
   line-height: 1.6;
   text-shadow: 3px 3px 0 #173c89;
 }
+
+/* =====================================
+   CIPHER - ARCADE FINAL DESIGN
+   ===================================== */
+
+/* 1. 전체 배경 */
+body {
+  background-color: #080d1d;
+}
+
+/* 2. 사이드바의 빈 프로필 원 제거 */
+#sidebar #avatar {
+  display: none !important;
+}
+
+/* 프로필 제거 후 제목 간격 */
+#sidebar .profile-wrapper {
+  padding-top: 3rem;
+}
+
+/* 3. 사이드바 아케이드 장식 */
+#sidebar {
+  position: relative;
+  overflow: hidden;
+  border-right: 3px solid #3478f6;
+}
+
+/* 사이드바 아래쪽 픽셀 장식 */
+#sidebar::after {
+  content: "";
+  position: absolute;
+  bottom: 85px;
+  left: 25px;
+  width: 160px;
+  height: 50px;
+  background-image:
+    radial-gradient(circle, #ffd83d 3px, transparent 4px);
+  background-size: 24px 24px;
+  background-repeat: repeat-x;
+  opacity: 0.85;
+  pointer-events: none;
+}
+
+/* 4. 게시글 카드 - 아케이드 게임 선택창 */
+#post-list .card {
+  background: #0c1630;
+  border: 2px solid #3478f6;
+  border-radius: 2px !important;
+  box-shadow: 5px 5px 0 #142a59;
+  position: relative;
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+/* 카드에 마우스 올리기 */
+#post-list .card:hover {
+  transform: translate(-2px, -2px);
+  border-color: #ffd83d;
+  box-shadow: 7px 7px 0 #715b16;
+}
+
+/* 5. 카드 제목 */
+#post-list .card-title {
+  color: #f3f6ff;
+  font-weight: 750;
+}
+
+#post-list .card:hover .card-title {
+  color: #ffd83d;
+}
+
+/* 6. 페이지 제목 - 게임 UI 느낌 */
+#topbar-title {
+  font-family: Consolas, monospace;
+  letter-spacing: 1px;
+}
+
+/* 7. 본문 링크 */
+.post-content a {
+  color: #65a4ff;
+}
+
+.post-content a:hover {
+  color: #ffd83d;
+}
+
+/* 8. 본문 가독성 */
+.post-content {
+  line-height: 1.85;
+}
+
+/* 9. 선택 메뉴 강조 */
+#sidebar .nav-item.active .nav-link {
+  border-radius: 2px !important;
+  box-shadow: 3px 3px 0 #715b16;
+}
+
+/* 10. 모바일 대응 */
+@media (max-width: 768px) {
+  #sidebar::after {
+    display: none;
+  }
+
+  #post-list .card {
+    box-shadow: 2px 2px 0 #142a59;
+  }
+}
