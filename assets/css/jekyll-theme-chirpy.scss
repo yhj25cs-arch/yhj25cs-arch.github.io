@@ -115,3 +115,17 @@ a:hover {
     box-shadow: 2px 2px 0 #142a59;
   }
 }
+
+/* CIPHER - Arcade Pixel Logo */
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+#sidebar .site-title,
+#sidebar .site-title a {
+  color: #ffd83d !important;
+  font-family: 'Press Start 2P', monospace !important;
+  font-size: 20px !important;
+  letter-spacing: 1px;
+  line-height: 1.6;
+  text-shadow: 3px 3px 0 #173c89;
+}
