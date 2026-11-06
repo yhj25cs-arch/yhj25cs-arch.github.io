@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="1600" height="1000"
+     viewBox="0 0 1600 1000">
+
+  <defs>
+    <pattern id="dots" width="40" height="40"
+             patternUnits="userSpaceOnUse">
+      <rect x="17" y="17" width="7" height="7"
+            rx="1" fill="#FFD83D"/>
+    </pattern>
+  </defs>
+
+  <!-- Transparent background -->
+
+  <!-- Top-left maze -->
+  <g fill="none" stroke="#3478F6"
+     stroke-width="5" stroke-linejoin="round">
+
+    <path d="M0 180 H45 V115 H90 V65
+             H310 V0"/>
+
+    <path d="M0 225 H75 V155 H125 V110
+             H355 V0"/>
+
+    <!-- Top-right maze -->
+    <path d="M720 0 V55 H1060 V115
+             H1120 V0"/>
+
+    <path d="M820 0 V90 H1000 V155
+             H1080 V210 H1150 V0"/>
+
+    <path d="M1600 50 H1450 V110
+             H1390 V220 H1270"/>
+
+    <path d="M1600 100 H1500 V160
+             H1430 V275 H1300"/>
+
+    <!-- Right-side maze -->
+    <path d="M1600 360 H1470 V420
+             H1370 V480 H1600"/>
+
+    <path d="M1600 405 H1510 V465
+             H1410 V525 H1600"/>
+
+    <!-- Bottom-left maze -->
+    <path d="M0 760 H80 V825
+             H170 V890 H330 V1000"/>
+
+    <path d="M0 810 H40 V875
+             H130 V940 H285 V1000"/>
+
+    <!-- Bottom-right maze -->
+    <path d="M1600 780 H1480 V840
+             H1390 V910 H1250 V1000"/>
+
+    <path d="M1600 825 H1520 V885
+             H1430 V955 H1320 V1000"/>
+
+  </g>
+
+  <!-- Yellow arcade dots -->
+  <g fill="url(#dots)">
+    <rect x="160" y="25" width="300" height="40"/>
+    <rect x="1180" y="35" width="260" height="40"/>
+    <rect x="1100" y="300" width="350" height="40"/>
+    <rect x="90" y="680" width="300" height="40"/>
+    <rect x="1120" y="700" width="300" height="40"/>
+  </g>
+
+</svg>
