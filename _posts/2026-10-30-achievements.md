@@ -5,4 +5,4 @@ categories: ["공모전/자격증"]
 tags: [competition, certification]
 ---
 
-공모전 참가 경험과 자격증 준비 과정을 기록합니다.
+공모전 참가 경험과 자격증 준비 과정을 기록
