@@ -330,3 +330,44 @@ hr {
     padding: 14px;
   }
 }
+/* ==========================================
+   CIPHER - CONTENT READABILITY FIX
+   ========================================== */
+
+/* 정보 페이지 및 게시글의 본문 영역 */
+#main-wrapper .post-content {
+  position: relative;
+  z-index: 1;
+  background: rgba(8, 13, 29, 0.94) !important;
+  border-radius: 6px;
+  padding: 24px 28px !important;
+}
+
+/* 정보 페이지 제목 및 본문을 같은 패널로 보호 */
+#main-wrapper #page,
+#main-wrapper #post {
+  position: relative;
+  z-index: 1;
+  background: rgba(8, 13, 29, 0.90);
+  border-radius: 6px;
+  padding: 20px;
+}
+
+/* 글씨를 선명하게 */
+#main-wrapper .post-content,
+#main-wrapper .post-content p,
+#main-wrapper .post-content li {
+  color: #e8edf7;
+}
+
+/* 모바일 화면 */
+@media (max-width: 768px) {
+  #main-wrapper .post-content {
+    padding: 16px !important;
+  }
+
+  #main-wrapper #page,
+  #main-wrapper #post {
+    padding: 12px;
+  }
+}
