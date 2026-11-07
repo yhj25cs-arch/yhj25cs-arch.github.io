@@ -154,13 +154,10 @@ body {
 
 /* CIPHER - Arcade Maze Decoration */
 
-/* 메인 콘텐츠 영역 */
+/* 메인 콘텐츠 영역 - 가독성 유지 */
 #main-wrapper {
-  background-image: url('/assets/img/arcade-maze.svg');
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: 100% auto;
-  background-attachment: scroll;
+  background-color: #080d1d;
+  background-image: none !important;
 }
 
 /* 사이드바 미로 장식 */
