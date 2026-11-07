@@ -399,8 +399,14 @@ hr {
     grid-template-columns: 1fr;
   }
 }
-/* 상단 카테고리 제목 굵게 */
+
+/* 상단 페이지 제목 - 카테고리, 태그, 아카이브 */
+#topbar #topbar-title,
 #topbar-title {
-  font-weight: 800 !important;
+  font-family: Arial, "Malgun Gothic", sans-serif !important;
+  font-size: 22px !important;
+  font-weight: 900 !important;
   color: #f3f6ff !important;
+  letter-spacing: -0.5px !important;
+  text-shadow: 0.3px 0 currentColor;
 }
