@@ -16,6 +16,8 @@
    CIPHER - RETRO ARCADE THEME
    ========================================== */
 
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 /* 기본 색상 */
 html[data-bs-theme="dark"] {
   --main-bg: #080d1d;
@@ -29,9 +31,16 @@ body {
   background-color: #080d1d;
 }
 
-/* 사이드바: 위치 속성 변경하지 않음 */
+/* ==========================================
+   SIDEBAR
+   ========================================== */
+
 #sidebar {
-  background: #060b19;
+  background-color: #060b19;
+  background-image: url('/assets/img/arcade-maze.svg');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: auto 100%;
   border-right: 3px solid #3478f6;
 }
 
@@ -45,10 +54,13 @@ body {
   padding-top: 3rem;
 }
 
-/* 픽셀 폰트 */
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+/* 로고와 메뉴 영역에 반투명 배경 */
+#sidebar .profile-wrapper,
+#sidebar .nav {
+  background-color: rgba(6, 11, 25, 0.82);
+}
 
-/* CIPHER 로고 */
+/* CIPHER 픽셀 로고 */
 #sidebar .site-title,
 #sidebar .site-title a {
   color: #ffd83d !important;
@@ -56,10 +68,12 @@ body {
   font-size: 20px !important;
   letter-spacing: 1px;
   line-height: 1.6;
-  text-shadow: 3px 3px 0 #173c89;
+  text-shadow:
+    3px 3px 0 #173c89,
+    5px 5px 0 #07132b !important;
 }
 
-/* 블로그 소개 */
+/* 부제목 */
 #sidebar .site-subtitle {
   color: #a7b8d7;
 }
@@ -73,11 +87,12 @@ body {
 }
 
 #sidebar .nav-link:hover {
-  background: #142b57;
+  background-color: #142b57;
   color: #ffd83d;
+  box-shadow: inset 3px 0 0 #ffd83d;
 }
 
-/* 현재 선택된 메뉴 */
+/* 선택된 메뉴 */
 #sidebar .nav-item.active .nav-link {
   background: #222222;
   outline: 2px solid #ffd83d;
@@ -92,12 +107,62 @@ body {
   color: #ffd83d !important;
 }
 
-/* 게시글 카드 */
+/* ==========================================
+   MAIN - ARCADE MAZE BACKGROUND
+   ========================================== */
+
+/* 메인 영역에 미로 배경 유지 */
+#main-wrapper {
+  background-color: #080d1d;
+  background-image: url('/assets/img/arcade-maze.svg') !important;
+  background-repeat: repeat-y;
+  background-position: center top;
+  background-size: 100% auto;
+}
+
+/* 본문 콘텐츠를 배경보다 위에 배치 */
+#main-wrapper > .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* 글씨가 들어가는 주요 영역에 반투명 패널 */
+#archives,
+#tags,
+#categories,
+.post-content {
+  background-color: rgba(8, 13, 29, 0.93);
+  border-radius: 4px;
+}
+
+/* 아카이브 목록 */
+#archives .list-group-item {
+  background-color: rgba(12, 22, 48, 0.92);
+}
+
+/* 카테고리 카드 */
+#categories > div,
+.categories > div {
+  background-color: rgba(12, 22, 48, 0.94) !important;
+}
+
+/* 상단 페이지 제목 */
+#topbar-title {
+  font-family: Consolas, monospace;
+  letter-spacing: 1px;
+}
+
+/* ==========================================
+   POST CARDS
+   ========================================== */
+
 #post-list .card {
-  background: #0c1630;
+  background: rgba(11, 20, 42, 0.95);
   border: 2px solid #3478f6;
-  border-radius: 2px !important;
-  box-shadow: 4px 4px 0 #142a59;
+  border-radius: 3px !important;
+  box-shadow:
+    4px 4px 0 #142a59,
+    inset 0 0 16px rgba(52, 120, 246, 0.07);
   transition:
     transform 0.2s ease,
     border-color 0.2s ease,
@@ -108,113 +173,12 @@ body {
 #post-list .card:hover {
   transform: translate(-2px, -2px);
   border-color: #ffd83d;
-  box-shadow: 6px 6px 0 #715b16;
-}
-
-/* 게시글 제목 */
-#post-list .card-title {
-  color: #f3f6ff;
-  font-weight: 700;
-}
-
-#post-list .card:hover .card-title {
-  color: #ffd83d;
-}
-
-/* 상단 제목 */
-#topbar-title {
-  font-family: Consolas, monospace;
-  letter-spacing: 1px;
-}
-
-/* 본문 */
-.post-content {
-  line-height: 1.85;
-}
-
-.post-content a {
-  color: #65a4ff;
-}
-
-.post-content a:hover {
-  color: #ffd83d;
-}
-
-/* 모바일 화면 */
-@media (max-width: 768px) {
-  #post-list .card {
-    box-shadow: 2px 2px 0 #142a59;
-  }
-
-  #sidebar .site-title,
-  #sidebar .site-title a {
-    font-size: 17px !important;
-  }
-}
-
-/* CIPHER - Arcade Maze Decoration */
-
-/* 메인 콘텐츠 영역 - 가독성 유지 */
-#main-wrapper {
-  background-color: #080d1d;
-  background-image: none !important;
-}
-
-/* 사이드바 미로 장식 */
-#sidebar {
-  background-image: url('/assets/img/arcade-maze.svg');
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: auto 100%;
-}
-
-/* 모바일에서는 장식 간소화 */
-@media (max-width: 768px) {
-  #main-wrapper {
-    background-image: none;
-  }
-}
-
-/* ==========================================
-   CIPHER - ARCADE UI POLISH
-   ========================================== */
-
-/* 1. 사이드바 로고 강조 */
-#sidebar .site-title a {
-  text-shadow:
-    3px 3px 0 #173c89,
-    5px 5px 0 #07132b !important;
-}
-
-/* 2. 메뉴에 아케이드 선택 효과 */
-#sidebar .nav-link:hover {
-  background-color: #142b57;
-  box-shadow: inset 3px 0 0 #ffd83d;
-}
-
-#sidebar .nav-item.active .nav-link {
-  border: 1px solid #ffd83d;
-}
-
-/* 3. 게시글 카드 - 게임 선택 패널 */
-#post-list .card {
-  background: #0b142a;
-  border: 2px solid #3478f6;
-  border-radius: 3px !important;
-  box-shadow:
-    4px 4px 0 #142a59,
-    inset 0 0 16px rgba(52, 120, 246, 0.07);
-}
-
-/* 4. 카드 호버 - 선택된 게임 효과 */
-#post-list .card:hover {
-  border-color: #ffd83d;
   box-shadow:
     5px 5px 0 #715b16,
     0 0 16px rgba(255, 216, 61, 0.13);
 }
 
-/* 5. 카드 제목 */
+/* 카드 제목 */
 #post-list .card-title {
   color: #f3f6ff;
   font-weight: 800;
@@ -225,13 +189,99 @@ body {
   color: #ffd83d;
 }
 
-/* 6. 게시글 설명 가독성 */
+/* 카드 설명 */
 #post-list .card-text {
   color: #a7b8d7;
   line-height: 1.75;
 }
 
-/* 7. 카테고리 및 태그 */
+/* ==========================================
+   CATEGORY PAGE
+   ========================================== */
+
+#categories,
+.categories {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 28px;
+}
+
+/* 카테고리 카드 */
+#categories > div,
+.categories > div {
+  min-width: 0;
+  margin: 0 !important;
+  padding: 22px 18px !important;
+  border: 2px solid #3478f6 !important;
+  border-radius: 3px !important;
+  box-shadow: 4px 4px 0 #142a59;
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+#categories > div:hover,
+.categories > div:hover {
+  border-color: #ffd83d !important;
+  box-shadow: 5px 5px 0 #715b16;
+  transform: translateY(-3px);
+}
+
+/* 카테고리 제목 */
+#categories a,
+.categories a {
+  color: #f3f6ff !important;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+#categories a:hover,
+.categories a:hover {
+  color: #ffd83d !important;
+}
+
+/* 게시글 개수 */
+#categories .text-muted,
+.categories .text-muted {
+  color: #a7b8d7 !important;
+}
+
+/* ==========================================
+   POST CONTENT
+   ========================================== */
+
+.post-content {
+  line-height: 1.85;
+  padding: 18px 22px;
+}
+
+.post-content a {
+  color: #65a4ff;
+}
+
+.post-content a:hover {
+  color: #ffd83d;
+}
+
+.post-content h2 {
+  border-left: 4px solid #3478f6;
+  padding-left: 12px;
+}
+
+.post-content h3 {
+  color: #a9caff;
+}
+
+/* 인용문 */
+.post-content blockquote {
+  border-left: 3px solid #ffd83d;
+  background: rgba(52, 120, 246, 0.12);
+  padding: 12px 18px;
+}
+
+/* 태그 */
 .post-tag,
 .tag {
   border-radius: 3px !important;
@@ -244,109 +294,39 @@ body {
   border-color: #ffd83d;
 }
 
-/* 8. 본문 제목에 아케이드 포인트 */
-.post-content h2 {
-  border-left: 4px solid #3478f6;
-  padding-left: 12px;
-}
-
-.post-content h3 {
-  color: #a9caff;
-}
-
-/* 9. 인용문 디자인 */
-.post-content blockquote {
-  border-left: 3px solid #ffd83d;
-  background: rgba(52, 120, 246, 0.06);
-  padding: 12px 18px;
-}
-
-/* 10. 구분선 */
+/* 구분선 */
 hr {
   border-color: #3478f6;
   opacity: 0.5;
 }
 
-/* 11. 텍스트 선택 색상 */
+/* 텍스트 선택 */
 ::selection {
   background: #3478f6;
   color: #ffffff;
 }
 
-/* 12. 모바일 그림자 간소화 */
-@media (max-width: 768px) {
-  #post-list .card,
-  #post-list .card:hover {
-    box-shadow: 2px 2px 0 #142a59;
-  }
-}
-
 /* ==========================================
-   CIPHER - CATEGORY ARCADE FIX
+   MOBILE
    ========================================== */
 
-#categories,
-.categories {
-  display: grid !important;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 18px;
-  margin-top: 28px;
-}
-
-/* 카테고리 항목 */
-#categories > div,
-.categories > div {
-  min-width: 0;
-  margin: 0 !important;
-  padding: 22px 18px !important;
-  background: #0c1630 !important;
-  border: 2px solid #3478f6 !important;
-  border-radius: 3px !important;
-  box-shadow: 4px 4px 0 #142a59;
-  transition: 0.2s ease;
-}
-
-/* 마우스 효과 */
-#categories > div:hover,
-.categories > div:hover {
-  border-color: #ffd83d !important;
-  box-shadow: 5px 5px 0 #715b16;
-  transform: translateY(-3px);
-}
-
-/* 제목 */
-#categories a,
-.categories a {
-  color: #f3f6ff !important;
-  font-weight: 700;
-}
-
-#categories a:hover,
-.categories a:hover {
-  color: #ffd83d !important;
-}
-
-/* 카테고리 개수 */
-#categories .text-muted,
-.categories .text-muted {
-  color: #a7b8d7 !important;
-}
-
-/* 모바일 */
 @media (max-width: 768px) {
   #categories,
   .categories {
     grid-template-columns: 1fr;
   }
-}
 
-/* 상단 페이지 제목 - 카테고리, 태그, 아카이브 */
-#topbar #topbar-title,
-#topbar-title {
-  font-family: Arial, "Malgun Gothic", sans-serif !important;
-  font-size: 22px !important;
-  font-weight: 900 !important;
-  color: #f3f6ff !important;
-  letter-spacing: -0.5px !important;
-  text-shadow: 0.3px 0 currentColor;
+  #post-list .card,
+  #post-list .card:hover {
+    box-shadow: 2px 2px 0 #142a59;
+  }
+
+  #sidebar .site-title,
+  #sidebar .site-title a {
+    font-size: 17px !important;
+  }
+
+  .post-content {
+    padding: 14px;
+  }
 }
