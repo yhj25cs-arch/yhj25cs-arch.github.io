@@ -371,3 +371,45 @@ hr {
     padding: 12px;
   }
 }
+/* ==========================================
+   CIPHER - FONT & MAZE FIX
+   ========================================== */
+
+/* 본문 글씨체 */
+#main-wrapper {
+  font-family: Arial, "Malgun Gothic", sans-serif !important;
+}
+
+/* 제목 글씨체 */
+#main-wrapper h1,
+#main-wrapper h2,
+#main-wrapper h3,
+#topbar-title {
+  font-family: Arial, "Malgun Gothic", sans-serif !important;
+  font-weight: 700 !important;
+}
+
+/* 미로 배경은 유지하되 조금 어둡게 처리 */
+#main-wrapper {
+  background-image:
+    linear-gradient(
+      rgba(8, 13, 29, 0.48),
+      rgba(8, 13, 29, 0.48)
+    ),
+    url('/assets/img/arcade-maze.svg') !important;
+
+  background-repeat: repeat-y;
+  background-position: center top;
+  background-size: 100% auto;
+}
+
+/* 글씨가 있는 영역을 더 어둡게 */
+#main-wrapper .post-content {
+  background: rgba(8, 13, 29, 0.96) !important;
+}
+
+/* 정보 페이지 본문 보호 */
+#main-wrapper #page,
+#main-wrapper #post {
+  background: rgba(8, 13, 29, 0.94) !important;
+}
