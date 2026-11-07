@@ -177,7 +177,6 @@ body {
 
 /* ==========================================
    CIPHER - ARCADE UI POLISH
-   기존 코드 아래에 추가
    ========================================== */
 
 /* 1. 사이드바 로고 강조 */
@@ -280,62 +279,6 @@ hr {
   #post-list .card:hover {
     box-shadow: 2px 2px 0 #142a59;
   }
-}
-
-/* ==========================================
-   CIPHER - ARCADE UI POLISH
-   ========================================== */
-
-/* 사이드바 로고 */
-#sidebar .site-title a {
-  text-shadow:
-    3px 3px 0 #173c89,
-    5px 5px 0 #07132b !important;
-}
-
-/* 메뉴 선택 효과 */
-#sidebar .nav-link:hover {
-  background-color: #142b57;
-  box-shadow: inset 3px 0 0 #ffd83d;
-}
-
-#sidebar .nav-item.active .nav-link {
-  border: 1px solid #ffd83d;
-}
-
-/* 게시글 카드 */
-#post-list .card {
-  background: #0b142a;
-  border: 2px solid #3478f6;
-  border-radius: 3px !important;
-  box-shadow:
-    4px 4px 0 #142a59,
-    inset 0 0 16px rgba(52, 120, 246, 0.07);
-}
-
-/* 카드 마우스 효과 */
-#post-list .card:hover {
-  border-color: #ffd83d;
-  box-shadow:
-    5px 5px 0 #715b16,
-    0 0 16px rgba(255, 216, 61, 0.13);
-}
-
-/* 카드 제목 */
-#post-list .card-title {
-  color: #f3f6ff;
-  font-weight: 800;
-  letter-spacing: -0.4px;
-}
-
-#post-list .card:hover .card-title {
-  color: #ffd83d;
-}
-
-/* 카드 설명 */
-#post-list .card-text {
-  color: #a7b8d7;
-  line-height: 1.75;
 }
 
 /* ==========================================
