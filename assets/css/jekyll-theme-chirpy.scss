@@ -399,3 +399,8 @@ hr {
     grid-template-columns: 1fr;
   }
 }
+/* 상단 카테고리 제목 굵게 */
+#topbar-title {
+  font-weight: 800 !important;
+  color: #f3f6ff !important;
+}
