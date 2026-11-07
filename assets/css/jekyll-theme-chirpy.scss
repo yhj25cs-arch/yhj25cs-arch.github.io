@@ -342,64 +342,60 @@ hr {
 }
 
 /* ==========================================
-   CIPHER - ARCADE CATEGORY DESIGN
+   CIPHER - CATEGORY ARCADE FIX
    ========================================== */
 
-/* 카테고리 목록 2열 */
-#categories {
-  display: grid;
+#categories,
+.categories {
+  display: grid !important;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 20px;
+  gap: 18px;
   margin-top: 28px;
 }
 
-/* 카테고리 카드 */
-#categories .card {
+/* 카테고리 항목 */
+#categories > div,
+.categories > div {
+  min-width: 0;
+  margin: 0 !important;
+  padding: 22px 18px !important;
   background: #0c1630 !important;
   border: 2px solid #3478f6 !important;
   border-radius: 3px !important;
   box-shadow: 4px 4px 0 #142a59;
-  margin: 0 !important;
   transition: 0.2s ease;
 }
 
-/* 카테고리 마우스 효과 */
-#categories .card:hover {
+/* 마우스 효과 */
+#categories > div:hover,
+.categories > div:hover {
   border-color: #ffd83d !important;
   box-shadow: 5px 5px 0 #715b16;
   transform: translateY(-3px);
 }
 
-/* 카테고리 제목 */
-#categories .card a {
+/* 제목 */
+#categories a,
+.categories a {
   color: #f3f6ff !important;
   font-weight: 700;
-  text-decoration: none;
 }
 
-#categories .card:hover a {
+#categories a:hover,
+.categories a:hover {
   color: #ffd83d !important;
 }
 
-/* 카테고리 아이콘 */
-#categories .card i {
-  color: #65a4ff;
+/* 카테고리 개수 */
+#categories .text-muted,
+.categories .text-muted {
+  color: #a7b8d7 !important;
 }
 
-/* 포스트 수 */
-#categories .card .text-muted,
-#categories .card small {
-  color: #9aabc8 !important;
-}
-
-/* 모바일 대응 */
+/* 모바일 */
 @media (max-width: 768px) {
-  #categories {
+  #categories,
+  .categories {
     grid-template-columns: 1fr;
-    gap: 14px;
-  }
-
-  #post-list .card {
-    box-shadow: 2px 2px 0 #142a59;
   }
 }
