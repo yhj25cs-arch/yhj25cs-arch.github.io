@@ -18,7 +18,7 @@ tags: [research, conference, NDSS, Bootloader, Firmware, Fuzzing]
 ### 주요개념
 Firmware는 하드웨어의 동작을 제어하는 소프트웨어  
 Bootloader는 시스템의 부팅 과정에서 운영체제를 메모리에 적재하고 실행하는 역할을 하는 프로그램  
-대표적인 부트로더로는 GRUB, U-Boot, barebox 등이 있음.  
+대표적인 부트로더로는 GRUB, U-Boot, barebox 등이 있음  
 시스템의 기본적인 부팅 과정은 전원 공급 → 펌웨어 실행 → 부트로더 실행 → 운영체제 실행 순  
 
 ### 연구 배경
