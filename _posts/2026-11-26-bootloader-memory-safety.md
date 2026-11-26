@@ -10,7 +10,7 @@ tags: [research, conference, NDSS, Bootloader, Firmware, Fuzzing]
 - **논문 제목:** A Comprehensive Memory Safety Analysis of Bootloaders
 - **발표 학회:** NDSS Symposium 2025
 - **연구 분야:** 임베디드 보안, 부트로더, 메모리 취약점 분석
-- **논문 원문:** [논문 링](https://www.ndss-symposium.org/wp-content/uploads/2025-330-paper.pdf)
+- **논문 원문:** [논문 링크](https://www.ndss-symposium.org/wp-content/uploads/2025-330-paper.pdf)
 
 임베디드 보안에 관심을 가지면서 ARM 어셈블리와 메모리 구조를 공부하고 있다. 그 과정에서 운영체제가 실행되기 이전에는 어떤 보안 취약점이 발생할 수 있는지 궁금해졌다. 이번 논문은 부트로더의 메모리 취약점을 체계적으로 분석하고 이를 탐지하는 방법을 제안한다는 점에서 관심 분야와 관련이 있어 선정하였다.
 
