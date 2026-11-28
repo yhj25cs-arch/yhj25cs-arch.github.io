@@ -1,7 +1,7 @@
 ---
 title: "Fuzzing의 개념과 Fuzzer의 종류 및 특징"
 date: 2026-11-28 22:45:00 +0900
-categories: ["BugBounty", "블로그/기술문서"]
+categories: ["BugBounty"]
 tags: [Fuzzing, Fuzzer, AFL++, Jackalope, libFuzzer, Vulnerability]
 ---
 
