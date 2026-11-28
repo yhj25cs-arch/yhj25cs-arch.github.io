@@ -24,9 +24,9 @@ OWASP Top 10 2025에서 발표한 관련 통계는 다음과 같다.
 | 총 취약점 발생 건수 | 1,839,701건 |
 | 관련 CVE 건수 | 32,654건 |
 
-CWE(Common Weakness Enumeration)란? 소프트웨어와 하드웨어에서 발생할 수 있는 보안 약점의 유형을 분류한 것
+- CWE(Common Weakness Enumeration)란? 소프트웨어와 하드웨어에서 발생할 수 있는 보안 약점의 유형을 분류한 것
 
-CVE(Common Vulnerabilities and Exposures)란 공개적으로 알려진 개별 보안 취약점에 식별 번호를 부여하는 체계
+- CVE(Common Vulnerabilities and Exposures)란 공개적으로 알려진 개별 보안 취약점에 식별 번호를 부여하는 체계
 
 -> 위 수치는 OWASP가 분류하고 집계한 자료를 기반으로 하며 실제 해킹 사고의 건수를 의미하는 것은 아님
 
